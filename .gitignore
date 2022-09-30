@@ -1,0 +1,16 @@
+!.gitignore
+
+
+
+*.txt
+*.cfg
+*.bin
+*.elf
+*.bak
+
+*.c
+*.o
+*.so
+
+test*
+tools*
