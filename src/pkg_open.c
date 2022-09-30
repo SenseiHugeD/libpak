@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <fcntl.h>
 #include <string.h>
 #include <dirent.h>
@@ -8,7 +9,7 @@
 
 
 
-int pkg_open(int fd, char *n) {
+int pkg_open(FILE *fd, char *n) {
    struct stat st;
    DIR *d;
 
