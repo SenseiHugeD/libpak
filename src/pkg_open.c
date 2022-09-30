@@ -24,7 +24,7 @@ int pkg_open(FILE *fd, char *n) {
 	 fd = d;
 	 break;
       case S_IFREG:
-         fd = open(n, O_RDWR);
+         fd = fopen(n, "rb+");
 	 break;
       default:
 	 break;
