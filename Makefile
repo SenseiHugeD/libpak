@@ -15,9 +15,9 @@ all:
 
 
 test:
-	export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
+	@#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd`
 	gcc examples/test_libopen_close.c -Iinclude -L. -o test -lpak
-	./test /bin/sh
+	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:`pwd` ./test /bin/sh
 
 
 clean:
